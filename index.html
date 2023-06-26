@@ -7,12 +7,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+        html{
+            scroll-behavior: smooth;
+        }
+        
         body {
             text-align: center;
+            font-family: 'Do Hyeon', sans-serif;
         }
         
         h1 {
             margin-top: 5vh;
+            font-family: 'Black Han Sans', sans-serif;
         }
         
         .nav {
@@ -29,7 +38,7 @@
             line-height: 7vh;
             margin: 0 4vw;
             padding: 0;
-            font-size: 1.3vw;
+            font-size: 1.8vw;
         }
         
         a {
@@ -57,13 +66,18 @@
         }
         
         .image {
-            width: 80vw;
+            width: 90vw;
             margin: 10vh auto;
             box-shadow: 0 0 100px -50px black;
         }
         
         img {
-            width: 80vw;
+            width: 90vw;
+        }
+
+        .copy {
+            font-size: 0.2vw;
+            color: rgb(212, 212, 212);
         }
         
         #carouselExampleIndicators {
@@ -83,7 +97,7 @@
 <body>
     <h1>지구 프로젝트</h1>
     <div class="nav">
-        <div class="detail">홈</div>
+        <div class="detail"><a href="#page1">홈</a></div>
         <div class="detail detail1">
             <span>공지사항</span>
             <ul>
@@ -114,7 +128,7 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="image/home/001.png" class="d-block w-100" alt="...">
+                            <a href="#page1"><img src="image/home/001.png" class="d-block w-100" alt="..."></a>
                         </div>
                         <div class="carousel-item">
                             <img src="image/home/008.jpg" class="d-block w-100" alt="...">
@@ -136,11 +150,16 @@
         </div>
     </div>
     <div class="image">
-        <img src="image/home/002.png">
+        <img src="image/home/002.png" id="page1">
         <img src="image/home/003.png">
         <img src="image/home/004.png">
         <img src="image/home/005.png">
         <img src="image/home/006.png">
+    </div>
+
+    <footer>
+        <span class="copy">&copy; 김채형 | 안호상 | 오우주</span>
+    </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
